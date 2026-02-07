@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading...</title>
+
+  <style>
+    body {
+      background-color: #111;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-family: Arial, sans-serif;
+    }
+
+    .message {
+      color: #111; /* hidden */
+      font-size: 2rem;
+      text-align: center;
+      transition: color 1s ease;
+    }
+
+    .show {
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body onclick="reveal()">
+  <div id="secret" class="message">
+    💖 I love You Usman💖
+  </div>
+
+  <script>
+    function reveal() {
+      document.getElementById("secret").classList.add("show");
+    }
+  </script>
+</body>
+</html>
